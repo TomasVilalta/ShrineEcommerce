@@ -4,14 +4,12 @@
     <item
         android:id="@+id/menu_search"
         android:icon="@drawable/ic_baseline_search_24"
-        android:iconTint="@color/black"
         android:title="search"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/menu_filter"
         android:icon="@drawable/filter_icon"
-        android:iconTint="@color/black"
         android:title="filter"
         app:showAsAction="always" />
 </menu>

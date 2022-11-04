@@ -7,8 +7,11 @@ import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.tryingout.adapter.ProductAdapter
 import com.example.tryingout.databinding.FragmentHomeBinding
-import com.example.tryingout.databinding.FragmentLoginBinding
+import com.example.tryingout.databinding.ItemProductBinding
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -20,13 +23,15 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
         // Toolbar Setup
         (activity as AppCompatActivity).setSupportActionBar(binding.appBar)
         (requireActivity() as MenuHost).addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.menu, menu)
-
             }
+
+
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 when (menuItem.itemId) {
                     R.id.menu_search -> {
@@ -37,7 +42,18 @@ class HomeFragment : Fragment() {
                 return true
             }
         }, viewLifecycleOwner)
+
+        //RecyclerView setup
+        initRecyclerView()
+
         return binding.root
+    }
+
+    private fun initRecyclerView() {
+        val recyclerView = binding.recyclerView
+        recyclerView.layoutManager = GridLayoutManager(this.context,2)
+        recyclerView.adapter = ProductAdapter(ProductProvider.ProductList)
+
     }
 
 }
