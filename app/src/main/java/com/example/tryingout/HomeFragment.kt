@@ -53,6 +53,7 @@ class HomeFragment : Fragment() {
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = GridLayoutManager(this.context,2)
         recyclerView.adapter = ProductAdapter(ProductProvider.ProductList)
+        recyclerView.addItemDecoration(ItemProductDecoration(16,4))
 
     }
 
