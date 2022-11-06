@@ -1,6 +1,7 @@
 package com.example.tryingout.adapter
 
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.tryingout.Product
@@ -14,6 +15,13 @@ class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         binding.productTitle.text = product.product
         binding.productPrice.text = product.price.toString()
         Glide.with(binding.productImage.context).load(product.photo).into(binding.productImage)
+        itemView.setOnClickListener {
+            Toast.makeText(
+                binding.productTitle.context,
+                "'Tis a ${product.product}",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
 
