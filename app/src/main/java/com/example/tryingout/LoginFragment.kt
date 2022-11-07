@@ -1,13 +1,13 @@
 package com.example.tryingout
 
 import android.os.Bundle
+import android.text.Editable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.tryingout.databinding.FragmentLoginBinding
 
 
@@ -26,6 +26,34 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.loginButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_homeFragment))
+        //Click listeners
+
+        binding.forgotText.setOnClickListener {
+            Toast.makeText(
+                view.context,
+                "Oh that's not good",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+        binding.loginButton.setOnClickListener {
+            if (!isPasswordValid(binding.passwordEditText.text!!)) {
+                binding.passwordEditText.error = getString(R.string.password_err)
+            } else {
+                // Clear the error.
+                binding.passwordEditText.error = null
+               view.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            }
+        }
+
     }
+
+    private fun isPasswordValid(text: Editable?): Boolean {
+        return text != null && text.length >= 5
+    }
+
+
 }
+
+
+

@@ -4,4 +4,8 @@
     <string name="login_text">Shrine</string>
     <string name="hint_password">Password</string>
     <string name="hint_username">Username</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_your_password"><u>Forgot your password?</u></string>
+    <string name="password_err">Password is incorrect</string>
+    <string name="login_logo_description">Shrine logo</string>
 </resources>

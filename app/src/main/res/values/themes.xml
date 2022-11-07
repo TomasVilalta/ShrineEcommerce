@@ -6,6 +6,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorControlActivated">#5E4244</item>
     </style>
 
     <!-- ToolBar theme    -->
@@ -14,5 +15,16 @@
         <item name="android:theme">@style/Theme.Shrine</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
+
+    <!--    Button theme -->
+    <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="backgroundTint">@color/loginPageBackgroundColor</item>
+    </style>
+
+    <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
 
 </resources>

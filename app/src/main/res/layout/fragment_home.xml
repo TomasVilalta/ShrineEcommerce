@@ -19,6 +19,7 @@
             app:navigationIcon="@drawable/drawer_icon"
             app:title="@string/app_name"
             app:titleTextColor="@color/black" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView

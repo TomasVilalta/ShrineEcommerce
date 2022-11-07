@@ -16,5 +16,5 @@
     <color name="toolbarIconColor">@color/textColorPrimary</color>
     <color name="loginPageBackgroundColor">#FFFFFF</color>
     <color name="productGridBackgroundColor">#FFFFFF</color>
-
+    <color name="errorMessage">#9C1B1B</color>
 </resources>

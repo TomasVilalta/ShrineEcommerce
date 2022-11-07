@@ -8,10 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.tryingout.adapter.ProductAdapter
 import com.example.tryingout.databinding.FragmentHomeBinding
-import com.example.tryingout.databinding.ItemProductBinding
+
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -30,7 +29,6 @@ class HomeFragment : Fragment() {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.menu, menu)
             }
-
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 when (menuItem.itemId) {
@@ -51,9 +49,9 @@ class HomeFragment : Fragment() {
 
     private fun initRecyclerView() {
         val recyclerView = binding.recyclerView
-        recyclerView.layoutManager = GridLayoutManager(this.context,2)
+        recyclerView.layoutManager = GridLayoutManager(this.context, 2)
         recyclerView.adapter = ProductAdapter(ProductProvider.ProductList)
-        recyclerView.addItemDecoration(ItemProductDecoration(16,4))
+        recyclerView.addItemDecoration(ItemProductDecoration(16, 4))
 
     }
 
