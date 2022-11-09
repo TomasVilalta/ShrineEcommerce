@@ -8,4 +8,6 @@
     <string name="forgot_your_password"><u>Forgot your password?</u></string>
     <string name="password_err">Password is incorrect</string>
     <string name="login_logo_description">Shrine logo</string>
+    <string name="product_price">$79.99</string>
+    <string name="white_t_shirt">White T-shirt</string>
 </resources>
