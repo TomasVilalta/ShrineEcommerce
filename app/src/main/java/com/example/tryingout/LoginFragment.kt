@@ -26,8 +26,8 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //Click listeners
-
+        //----Click listeners-------
+        // Restore password button
         binding.forgotText.setOnClickListener {
             Toast.makeText(
                 view.context,
@@ -35,15 +35,25 @@ class LoginFragment : Fragment() {
                 Toast.LENGTH_SHORT
             ).show()
         }
-
+        // Login button
         binding.loginButton.setOnClickListener {
             if (!isPasswordValid(binding.passwordEditText.text!!)) {
                 binding.passwordEditText.error = getString(R.string.password_err)
             } else {
                 // Clear the error.
                 binding.passwordEditText.error = null
-               view.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                view.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
             }
+        }
+
+        // Sign Up button
+
+        binding.registerText.setOnClickListener {
+            Toast.makeText(
+                view.context,
+                "Sign up click",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
     }

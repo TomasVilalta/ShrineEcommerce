@@ -89,4 +89,34 @@
         app:layout_constraintStart_toStartOf="@id/forgot_text"
         app:layout_constraintTop_toBottomOf="@id/forgot_text" />
 
+    <TextView
+        android:id="@+id/no_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/register_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_button"
+        android:text="@string/or"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_account_text"
+        android:text="@string/sign_up_now"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+
+        android:textStyle="bold"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
