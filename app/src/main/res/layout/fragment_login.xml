@@ -23,11 +23,11 @@
 
     <TextView
         android:id="@+id/login_text"
+        style="@style/TextAppearance.Shrine.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
         android:text="@string/login_text"
-        style="@style/TextAppearance.Shrine.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -93,13 +93,13 @@
         android:id="@+id/no_account_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/or"
         app:layout_constraintBottom_toTopOf="@id/register_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_button"
-        android:text="@string/or"
         app:layout_constraintVertical_chainStyle="packed"
-        android:layout_marginBottom="8dp"
 
         />
 
@@ -107,16 +107,14 @@
         android:id="@+id/register_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/sign_up_now"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/no_account_text"
-        android:text="@string/sign_up_now"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintVertical_chainStyle="packed"
-
-        android:textStyle="bold"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
