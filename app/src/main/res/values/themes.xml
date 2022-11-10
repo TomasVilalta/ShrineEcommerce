@@ -23,6 +23,12 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+    
+    <!--Drawer Item theme-->
+    <style name="Widget.Shrine.NavigationView" parent="Widget.Design.NavigationView">
+        <item name="android:background">@color/colorPrimaryDark</item>
+
+    </style>
 
     <!--    Button theme -->
     <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
@@ -34,7 +40,7 @@
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
-<!--    Login Title Style-->
+    <!--    Login Title Style-->
     <style name="TextAppearance.Shrine.Title" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/textColorPrimary</item>

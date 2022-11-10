@@ -3,31 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
-    android:background="@color/colorAccent">
+    android:layout_height="220dp"
+    android:background="@color/colorPrimaryDark">
 
 
     <ImageView
+        android:id="@+id/navHeaderLogo"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/logo"
         android:alpha="0.5"
-        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="0dp"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style="@style/TextAppearance.Shrine.Title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingVertical="25dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:gravity="center"
-        android:textStyle="normal"
-        android:textSize="64sp"/>
+        android:background="#FF9800"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/leaf_svgrepo_com"
+            android:layout_marginStart="25dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fall '22 collection"
+            android:layout_marginStart="25dp"
+            android:textAlignment="center"
+            style="@style/TextAppearance.Shrine.Title"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
