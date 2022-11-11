@@ -1,14 +1,16 @@
-package com.example.tryingout
+package com.example.tryingout.fragments
 
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.tryingout.ItemProductDecoration
+import com.example.tryingout.ProductProvider
+import com.example.tryingout.R
 import com.example.tryingout.adapter.ProductAdapter
 import com.example.tryingout.databinding.FragmentHomeBinding
 
@@ -35,6 +37,7 @@ class HomeFragment : Fragment() {
                 when (menuItem.itemId) {
                     R.id.menu_search -> {
                         Toast.makeText(activity, "hola", Toast.LENGTH_SHORT).show()
+                        view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeFragment)
 
                     }
                 }

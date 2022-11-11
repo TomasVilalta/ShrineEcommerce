@@ -20,7 +20,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/white" />
 
+    <TextView
+        android:id="@+id/notLoggedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are not logged in"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="6dp"
+        />
+
     <LinearLayout
+        android:id="@+id/seasonButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="25dp"
@@ -28,20 +40,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#FF9800"
         android:gravity="center_vertical"
-        android:elevation="2dp"
+        android:elevation="4dp"
         >
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:src="@drawable/leaf_svgrepo_com"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="20dp"
 
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fall '22 collection"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="20dp"
             android:textAlignment="center"
             style="@style/TextAppearance.Shrine.Title"
             android:textSize="16sp"/>

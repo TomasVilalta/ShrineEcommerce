@@ -13,7 +13,7 @@
 
     <group android:id="@+id/mainGroup">
         <item
-            android:id="@+id/homeItem"
+            android:id="@+id/homeFragment"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="Homepage"
 
@@ -25,7 +25,7 @@
 
 
         <item
-            android:id="@+id/discountItem"
+            android:id="@+id/outletItem"
             android:icon="@drawable/offer_svgrepo_com"
             android:title="Outlet" />
 
@@ -35,7 +35,7 @@
     <group android:id="@+id/shop_group">
         <item
             android:icon="@drawable/ic_baseline_shopping_cart_24"
-            android:id="@+id/cartItem"
+            android:id="@+id/cartFragment"
             android:title="My cart" />
         <item
             android:icon="@drawable/ic_baseline_card_giftcard_24"
@@ -61,7 +61,7 @@
             <item
                 android:id="@+id/contactItem"
                 android:icon="@drawable/ic_baseline_chat_24"
-                android:title="Need help?" />
+                android:title="Contact us" />
 
 
         </menu>
