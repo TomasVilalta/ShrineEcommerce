@@ -25,7 +25,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         // Toolbar Setup
-        (activity as AppCompatActivity).setSupportActionBar(binding.appBar)
+//        (activity as AppCompatActivity).setSupportActionBar(binding.appBar)
         (requireActivity() as MenuHost).addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 menuInflater.inflate(R.menu.menu, menu)

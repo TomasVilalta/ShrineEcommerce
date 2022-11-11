@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/seasonGroup">
+<!--        <item-->
+<!--            android:id="@+id/seasonItem"-->
+<!--            android:icon="@drawable/leaf_svgrepo_com"-->
+<!--            android:title="Fall '22 collection"-->
+<!--            android:iconTint="#FF5722"-->
+<!--           />-->
+
+    </group>
+
+    <group android:id="@+id/mainGroup">
+        <item
+            android:id="@+id/homeItem"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Homepage"
+
+            />
+        <item
+            android:id="@+id/featuredItem"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Featured" />
+
+
+        <item
+            android:id="@+id/discountItem"
+            android:icon="@drawable/offer_svgrepo_com"
+            android:title="Outlet" />
+
+
+    </group>
+
+    <group android:id="@+id/shop_group">
+        <item
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:id="@+id/cartItem"
+            android:title="My cart" />
+        <item
+            android:icon="@drawable/ic_baseline_card_giftcard_24"
+            android:id="@+id/giftCardItem"
+            android:title="Giftcards" />
+        <item
+            android:icon="@drawable/ic_baseline_star_24"
+            android:id="@+id/memberItem"
+            android:title="Become a member"/>
+
+    </group>
+
+    <item android:title="+Info">
+        <menu>
+            <item
+                android:id="@+id/newsletterItem"
+                android:icon="@drawable/ic_baseline_email_24"
+                android:title="Newsletter" />
+            <item
+                android:id="@+id/helpItem"
+                android:icon="@drawable/ic_baseline_support_agent_24"
+                android:title="Need help?" />
+            <item
+                android:id="@+id/contactItem"
+                android:icon="@drawable/ic_baseline_chat_24"
+                android:title="Need help?" />
+
+
+        </menu>
+    </item>
+</menu>

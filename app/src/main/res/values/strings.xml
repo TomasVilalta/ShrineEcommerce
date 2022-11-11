@@ -12,4 +12,6 @@
     <string name="white_t_shirt">White T-shirt</string>
     <string name="sign_up_now">Sign up now!</string>
     <string name="or">or</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
 </resources>
