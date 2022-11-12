@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
                 when (menuItem.itemId) {
                     R.id.menu_search -> {
                         Toast.makeText(activity, "hola", Toast.LENGTH_SHORT).show()
-                        view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeFragment)
+                        view?.findNavController()?.navigate(R.id.action_homeFragment_to_loginFragment)
 
                     }
                 }

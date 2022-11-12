@@ -42,7 +42,9 @@ class LoginFragment : Fragment() {
                 binding.passwordEditText.error = getString(R.string.password_err)
             } else {
                 // Clear the error.
+
                 binding.passwordEditText.error = null
+                it.findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
 
 
             }

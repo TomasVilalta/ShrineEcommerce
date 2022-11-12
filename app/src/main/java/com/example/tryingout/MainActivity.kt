@@ -52,13 +52,12 @@ class MainActivity : AppCompatActivity() {
 //       Drawer Header listener
         val text = binding.navView.getHeaderView(0).findViewById<TextView>(R.id.notLoggedText)
         text.setOnClickListener {
-            supportFragmentManager.commit {
-                replace(R.id.navHostFragment, LoginFragment())
+                navController.navigate(R.id.loginFragment)
                 binding.drawerLayout.close()
             }
 
 
-        }
+
         val seasonButton =
             binding.navView.getHeaderView(0).findViewById<LinearLayout>(R.id.seasonButton)
         seasonButton.setOnClickListener {
